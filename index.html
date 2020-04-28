@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Covid19</title>
+</head>
+<body class="bg" onload="information()">
+<!--START HERE-->
+<div class="container">
+    <div class="columns">
+        <div class="column">
+            <form>
+                <input type="text" placeholder=" جستجو کشور مورد نظر  " class="search" id="search"  onkeyup="myFunction()"/>
+                <div class="after"></div>
+                <input type="submit" />
+            </form>
+            <h4 dir="rtl"> جستجوی نام کشور (Latin & Capital)</h4>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column is-6 is-offset-3 ">
+            <h2 id="name" class="name p-3 has-text-white has-text-centered">آمار جهانی کروناویروس</h2>
+            <div class="card has-text-centered" id="card">
+                <div class="content" dir="rtl">
+                    <div class="columns">
+                        <div class="column p-3 ">
+                            <h6 class="heading">مبتلایان جدید:</h6>
+                            <p class="title" id="newconfirmed"></p>
+                        </div>
+                        <div class="column p-3">
+                            <h6 class="heading">کل مبتلایان :</h6>
+                            <p class="title" id="totalconfirmed"></p>
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="column p-3 ">
+                            <h6 class="heading">فوتی جدید:</h6>
+                            <p class="title" id="newdeaths"></p>
+                        </div>
+                        <div class="column p-3">
+                            <h6 class="heading">کل فوتی ها :</h6>
+                            <p class="title" id="totaldeaths"></p>
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="column p-3 ">
+                            <h6 class="heading">بهبود یافته جدید:</h6>
+                            <p class="title" id="newrecovered"></p>
+                        </div>
+                        <div class="column p-3">
+                            <h6 class="heading">کل بهبود یافتگان :</h6>
+                            <p class="title" id="totalrecovered"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+<script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<script src="javascr.js"></script>
+</body>
+</html>

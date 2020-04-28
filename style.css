@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'Sahel';
+    src: url(font/Sahel.woff);
+}
+body{
+    font-family: Sahel;
+    background: url("image/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 665px;
+}
+.name{
+    font-size: 20px;
+    font-weight: bold;
+}
+h4 {
+    color: white;
+    text-align: center;
+    letter-spacing: 0.5px;
+
+    transition: all 0.3s;
+    position: relative;
+    top: -5px;
+    margin: 0;
+}
+h4.show {
+    animation: alert 0.18s ease-in-out;
+    animation-fill-mode: forwards;
+}
+form {
+    transition: all 0.15s;
+}
+form.explode {
+    transform: scale(1.4);
+    opacity: 0;
+}
+form {
+    width: 36px;
+    height: 36px;
+    margin: 20px auto;
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+}
+input[type="submit"]{
+    display: none ;
+}
+input {
+    width: 100%;
+}
+input {
+    background: none;
+    border: 3px solid #fff;
+    border-radius: 26px;
+    box-sizing: border-box;
+    padding: 5px 15px 7px;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+}
+input:focus {
+    outline: none;
+}
+.after {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 1px;
+    right: 0;
+    z-index: 1;
+}
+form.open .after {
+    cursor: pointer;
+}
+.after:before,
+.after:after {
+    content: '';
+    width: 13px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+    position: absolute;
+    transform-origin: 100% 100%;
+}
+.after:after{
+    bottom: -3px;
+    right: -3px;
+    transform: rotate(45deg);
+}
+.after:before {
+    top: -3px;
+    right: -3px;
+    transform: rotate(-45deg);
+    opacity: 0;
+}
+
+form.open {
+    width: 250px;
+    color: #fff;
+}
+form.open .after {
+    z-index: 3;
+}
+form.open .after:before {
+    width: 20px;
+    top: 9px;
+    right: 13px;
+    opacity: 1;
+}
+form.open .after:after {
+    width: 20px;
+    bottom: 10px;
+    right: 15px;
+}
+.search{
+    text-align: center;
+}
+/*end of search*/
+.card{
+    border-radius: 20px;
+     margin: 30px;
+}
+.content{
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.p-3{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+@media only screen and (max-width: 767px) {
+    body {
+
+        background-image: url(image/bg.png);
+        height: auto;
+    }
+}
